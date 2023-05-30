@@ -1,9 +1,17 @@
+import "./App.css"
+
+
+import Footer from "./Footer"
+import Header from "./Header"
+import MainContent from "./MainContent"
 
 
 const App = () => {
     return(
-        <div>
-            <h1>Todo App</h1>
+        <div className="app" >
+            <Header />
+            <MainContent />
+            <Footer />
         </div>
     )
 }

@@ -1,0 +1,16 @@
+.app {
+    padding: 1em 2em 0em;
+}
+
+.btn {
+    padding: 0.5em 1em;
+    font-size: 1.1rem;
+    background-color: #313131;
+    color: #ffffff;
+    border: 2px solid gray;
+    border-radius: 0.5em;
+}
+
+.btn:hover {
+    box-shadow: 0px 2px 5px 0 #737070;
+}
