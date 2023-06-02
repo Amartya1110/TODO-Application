@@ -4,7 +4,7 @@ import "./Header.css"
 const Header = () => {
     return(
         <header>
-            <img src={todoLogo} alt="TODO-LOGO" class="todo-img" />
+            <img src={todoLogo} alt="TODO-LOGO" className="todo-img" />
             <button className="btn" >Register</button>
         </header>
     )

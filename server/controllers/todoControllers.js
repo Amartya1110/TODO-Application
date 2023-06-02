@@ -9,7 +9,7 @@ export const home = (req, res) => {
 export const createToDo = async (req, res) => {
     try{
         // Step-1: Get the data sent from the frontend
-        const {title, description} = req?.body
+        const {title, description, status} = req?.body
 
         // Step-2: Validate that received data
         if(!title) {
@@ -23,7 +23,7 @@ export const createToDo = async (req, res) => {
             throw new Error("Todo already exists")
         }
         //    b> If data does not exist in DB, insert the data into the DB
-        const todo = ToDo.create({title, description})
+        const todo = ToDo.create({title, description, status})
         res.status(201).json({
             success: true,
             message: "ToDo added successfully"

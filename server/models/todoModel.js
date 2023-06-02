@@ -13,6 +13,10 @@ const todoSchema = new schema({
     description: {
         type: String,
         required: true,
+    },
+    status: {
+        type: String,
+        required: true,
     }
 })
 

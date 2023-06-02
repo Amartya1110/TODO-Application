@@ -10,8 +10,12 @@
 }
 
 .todo-form {
+    height: 25vh;
     width: 100%;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .todo-title-input {
