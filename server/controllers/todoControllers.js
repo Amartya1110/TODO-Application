@@ -26,11 +26,17 @@ export const createToDo = async (req, res) => {
         const todo = ToDo.create({title, description, status})
         res.status(201).json({
             success: true,
-            message: "ToDo added successfully"
+            message: "ToDo added successfully",
+            data: {
+                title: title,
+                description,
+                status,
+            }
         })
     }
     catch(err) {
         console.log(err?.message)
+        res.status(400).json({success: false, error:err?.message})
     }
 
 }
