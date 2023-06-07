@@ -3,6 +3,7 @@ import { ToDoStates } from "../constants"
 import "./MainContent.css"
 import axios from "axios"
 import { addToDo } from "../utilities/slices/toDoSlice"
+import ToDoList from "./ToDoList"
 
 const MainContent = () => {
     const dispatch = useDispatch()
@@ -63,6 +64,7 @@ const MainContent = () => {
                 />
                 <button type="sunmit" className="btn">Add ToDo</button>
             </form>
+            <ToDoList />
         </div>
     )
 }

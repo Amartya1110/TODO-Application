@@ -1,0 +1,50 @@
+.todo-item {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: #c5c5c5; */
+    background-color: #313131;
+
+    margin: 0.7em auto;
+    padding: 0.5em 1em;
+    border-radius: 0.5em;
+    max-width: 1240px;
+}
+
+.todo-item * {
+    color: #ffffff;
+}
+
+.todo-check {
+    display: block;
+    height: 3em;
+    cursor: pointer;
+    color: aquamarine;
+    margin-right: 1em;
+}
+
+
+.todo-check:checked:active {
+    color: #07f5c5;
+}
+
+.todo-content {
+    display: flex;
+    align-items: center;
+    width: 80%;
+}
+
+.todo-title {
+    margin: 0 2em 0 1em;
+    width: 30%;
+}
+
+.todo-icons {
+    /* width: 10%; */
+    justify-self: flex-end;
+}
+
+.todo-icon {
+    height: 1.7em;
+    margin: 0 0.5em;
+}
